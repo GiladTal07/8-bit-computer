@@ -1,57 +1,47 @@
 # 8-bit-computer
 8-bit computer made on breadboard with IC chips
 
-# 🔧 Project Title: [Insert Circuit Name Here]
+## 📐 Module: Clock
 
-## 🖼️ Schematic Preview
+This is a component/module used in the **[Main Project Name]** project.
 
-![Schematic Image](./path/to/schematic.png)
+### 🧩 Role in the Main Project
 
-> _Replace the image path above with your actual schematic image or screenshot._
+Brief explanation of this subsection’s purpose:
 
----
-
-## 📝 Description
-
-Brief description of the circuit:
-
-- What does this circuit do?
-- What components or subsystems are included?
-- Why was it built / what is it useful for?
-- How does it work? (Short explanation)
+- What does this part do within the larger project?
+- How does it interact with other modules?
+- Why is it necessary?
 
 _Example:_  
-This circuit is a simple LED flasher using a 555 timer in astable mode. It demonstrates basic timing applications and is commonly used in electronics education.
+This module handles the interface between the ESP32 and the GC9A01A round TFT display, managing SPI communication and power regulation for proper display functionality.
 
 ---
 
-## 📦 Bill of Materials (BOM)
+### 🖼️ Schematic Preview
 
-| Quantity | Component         | Value / Part Number | Notes                       |
-|----------|-------------------|----------------------|-----------------------------|
-| 1        | 555 Timer IC       | NE555               | Main timing IC              |
-| 2        | Resistors          | 1kΩ, 10kΩ           | Sets timing interval        |
-| 1        | Capacitor          | 10µF                | Determines blink rate       |
-| 1        | LED                | Red                 | Visual indicator            |
-| 1        | Power Supply       | 5V                  | Or 9V battery               |
-| –        | Breadboard / PCB   | –                   | For assembly                |
-| –        | Wires / Jumpers    | –                   | For connections             |
+![Schematic](./path/to/schematic.png)  
+> _Replace with an actual image path of your schematic._
 
 ---
 
-## 📂 Files
+### 🔧 Materials (Bill of Materials)
 
-- `circuit.sch` — KiCad schematic file  
-- `circuit.png` — Image of schematic  
-- `README.md` — This documentation file  
+| Qty | Component         | Value / Part Number | Notes                        |
+|-----|-------------------|----------------------|------------------------------|
+| 1   | [Part Name]        | [e.g., GC9A01A]      | [Short usage description]    |
+| 1   | [Resistor]         | [e.g., 10kΩ]         | Pull-up/down for button, etc |
+| –   | Wires / Jumpers    | –                    | For interconnection          |
+
+---
+
+### ⚙️ Integration Notes
+
+- To be connected
 
 ---
 
-## 📸 Optional: Demo Photo or Video
 
-If available, include a photo or video of the real-world circuit in action.
-
----
 
 ## 📜 License
 
