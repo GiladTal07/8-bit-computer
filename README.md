@@ -3,35 +3,39 @@
 
 ## 📐 Module: Clock
 
-This is a component/module used in the **[Main Project Name]** project.
+**This is a slightly changed version of BenEater's clock module as shown in his 8-bit computer series (https://www.youtube.com/watch?v=SmQ5K7UQPMM)**
 
 ### 🧩 Role in the Main Project
 
-Brief explanation of this subsection’s purpose:
-
-- What does this part do within the larger project?
-- How does it interact with other modules?
-- Why is it necessary?
-
-_Example:_  
-This module handles the interface between the ESP32 and the GC9A01A round TFT display, managing SPI communication and power regulation for proper display functionality.
+This module creates a constant up/down signal, whose frequency can be changed with the potentiometer. It will be used with the registers in order to write memory into them. (I haven't yet built the registers, so they aren't connected to anything at the moment.)
 
 ---
 
 ### 🖼️ Schematic Preview
 
-![Schematic](./path/to/schematic.png)  
-> _Replace with an actual image path of your schematic._
+![Clock Schematic](clock/clock_schematic.png) 
 
 ---
 
-### 🔧 Materials (Bill of Materials)
+### 🔧 Materials
 
-| Qty | Component         | Value / Part Number | Notes                        |
-|-----|-------------------|----------------------|------------------------------|
-| 1   | [Part Name]        | [e.g., GC9A01A]      | [Short usage description]    |
-| 1   | [Resistor]         | [e.g., 10kΩ]         | Pull-up/down for button, etc |
-| –   | Wires / Jumpers    | –                    | For interconnection          |
+| Qty | Component         | Part Number     | Notes |
+|-----|-------------------|-----------------|-------|
+| 3   | 555 Timer | NE555P | |
+| 1   | NOT Gate | 74LS04 | Optional, Can be replaced with 2 NPN transistors and 4 10kΩ resistors |
+| 1   | AND Gate | 74LS08 | Optional, Can be replaced with 6 NPN transistors and 9 10kΩ resistors |
+| 1   | OR Gate | 74LS32 | Optional, Can be replaced with 2 NPN transistors and 3 10kΩ resistors |
+| 5   | LED (Any color) | LED | |
+| 4   | 220Ω Resistor | 220Ω Resistor | |
+| 5   | 1KΩ Resistor | 1KΩ Resistor | |
+| 1   | 1MΩ Resistor | 1MΩ Resistor | |
+| 5   | 0.1µF Capacitor | 0.1µF Capacitor | Optionally add 3 more a bypass capacitors on logic gate IC chips |
+| 1   | 1µF Capacitor | 1µF Capacitor | |
+| 1   | 1MΩ Potentiometer | 1MΩ Potentiometer | |
+| 1   | Pushbutton Switch | Pushbutton Switch | |
+| 1   | Slideswitch | Slideswitch | |
+|A lot| Wires | | 
+
 
 ---
 
