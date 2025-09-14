@@ -3,12 +3,6 @@
 
 ## 📐 Module: Clock
 
-**This is a slightly changed version of BenEater's clock module as shown in his 8-bit computer series (https://www.youtube.com/watch?v=SmQ5K7UQPMM)**
-
-### 🧩 Role in the Main Project
-
-This module creates a constant up/down signal, whose frequency can be changed with the potentiometer. It will be used with the registers in order to write memory into them. (I haven't yet built the registers, so they aren't connected to anything at the moment.)
-
 ---
 
 ### 🖼️ Schematic Preview
@@ -44,10 +38,4 @@ This module creates a constant up/down signal, whose frequency can be changed wi
 - To be connected
 
 ---
-
-
-
-## 📜 License
-
-Specify if your project is under MIT, GPL, CC, or another license.
 
